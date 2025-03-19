@@ -2,6 +2,7 @@ import openai
 import os
 import random
 from dotenv import load_dotenv
+
 load_dotenv()
 
 TOPICS = [
