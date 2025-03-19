@@ -1,0 +1,43 @@
+
+**************************************************
+user: Greetings! I am interested in natural language processing and I was wondering if you could help me generate an example of text that illustrates multiple skills in semantics or syntax. The example should be a minimal natural piece of text with up to a few lines in the context of Sewing that illustrates all of the following skills: complex question (loaded question with implicit assumption ), spatial reasoning, accident (fallacy), statistical syllogism. Please keep the text as short as possible, and make sure the concepts can be found fully from the text. 
+
+For reference, here are the definitions and examples for the concepts:
+**complex question (loaded question with implicit assumption )**: A question that is loaded with an implicit assumption. For example, "Why are you lying to me?" is a question that presupposes you are lying to me. Any answer you give will force you to agree you are lying.
+**spatial reasoning**: The capacity to reason about the spatial relationships between objects. For example, The key fit into the box. Using spatial reasoning, one can deduce that the width of the key was smaller than the width of the box.
+**accident (fallacy)**: an informal fallacy and a deductively valid but unsound argument occurring in a statistical syllogism (an argument based on a generalization) when an exception to a rule of thumb is ignored.  For example, Cutting people with knives is a crime. Surgeons cut people with knives. Surgeons are criminals.
+**statistical syllogism**: A syllogism that argues, using inductive reasoning, from a generalization true for the most part to a particular case. For example, "Almost all people are taller than 26 inches. Gareth is a person. Therefore, Gareth is taller than 26 inches."
+
+Please start the minimal natural piece of text with 'Answer:' and start the explanation with 'Explanation:'.
+
+Thanks very much!
+assistant: Answer:
+"Just because most couture dresses I've sewn fit well on tall women, why would you assume that my new creation, a dress stored in a tight cupboard, will inevitably lead to another success on tomorrow's tall model without even trying it on?"
+
+Explanation:
+Here are how the concepts are demonstrated in the above sentence: 
+1. **Complex question (loaded question with implicit assumption) **: "Why would you assume that my new creation, a dress stored in a tight cupboard, will inevitably lead to another success on tomorrow's tall model without even trying it on?" carries an implicit assumption that the person addressed has made such an assumption, and evokes an answer confirming it.
+2. **Spatial reasoning**: The dress being stored in a tight cupboard suggests that the dress size is smaller or at most equal to the cupboard size.
+3. **Accident (fallacy)**: This is inferred by the implied logic: most couture dresses made by the speaker fit well on tall women (generalization), so the new dress will fit the tall model (particular case), while ignoring the possibility that this might be an exception.
+4. **Statistical syllogism**: The speaker has experienced success with most couture dresses fitting well on tall women, and implies that the new creation will fit tomorrow's tall model, based on the generalization.
+**************************************************
+"Just because most couture dresses I've sewn fit well on tall women, why would you assume that my new creation, a dress stored in a tight cupboard, will inevitably lead to another success on tomorrow's tall model without even trying it on?"
+**************************************************
+
+
+**************************************************
+user: Thanks very much. Could you please look over your answer and improve it? Please make sure that the new answer better illustrates all skills and remains on topic. On top of that, please also make sure the new answer only contains up to three sentences. 
+Again, please start the improved minimal natural piece of text with 'Answer:' and start the explanation with 'Explanation:'.
+
+Thanks very much!
+assistant: Answer:
+"Why, considering that 80% of my designs fit perfectly on tall models, would you naturally assume this dress resting inside this tiny chest, will be another hit with Angie, our 6 feet tall model tonight?"
+
+Explanation:
+1. **Complex question (loaded question with implicit assumption):** In the sentence "Why, considering that 80% of my designs fit perfectly on tall models, would you naturally assume this dress resting inside this tiny chest, will be another hit with Angie, our 6 feet tall model tonight?", there is an implicit assumption that the person being addressed has perceived the given situation this specific way. The question presupposes that they think the new design will automatically fit the tall model because most of the previous designs have. 
+2. **Spatial reasoning:** The spatial reasoning is reflected in the concept of the dress being able to fit inside the tiny chest, therefore, it spatially implies that the dress is smaller than the chest or at most, the same size.
+3. **Accident (fallacy):** The fallacy lies in assuming that because a majority of the designs fit tall models, this particular dress will fit Angie tonight, ignoring the fact that this particular dress could be an exception, an aspect that is also subtly hinted at by noting the small storage chest.
+4. **Statistical syllogism:** The generalization made here is that 80% of the designs fit tall models well, and it is taken for granted that this specific dress will follow suit.
+**************************************************
+"Why, considering that 80% of my designs fit perfectly on tall models, would you naturally assume this dress resting inside this tiny chest, will be another hit with Angie, our 6 feet tall model tonight?"
+**************************************************

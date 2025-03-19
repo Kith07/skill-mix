@@ -1,0 +1,86 @@
+
+Greetings! I was wondering if you could help me grade the following answer given by a student.
+
+I’ll first describe the question that was given to the student, and then give you the student’s answer, and the grading rubric.
+
+The question given to the student was as follows: "Generate a code snippet in the context of Profiling. This code should illustrate all of the following skills: Cycle Detection in Graphs, and Error Handling & Exception Propagation."
+
+The student's answer was:
+
+"TOPIC: Profiling
+
+SKILLS: Cycle Detection in Graphs, and Error Handling & Exception Propagation,
+
+Sure, here's a simple Python solution which demonstrates those concepts:
+
+Solution:
+```python
+import cProfile
+import re
+
+def create_graph(edges):
+    graph = {}
+    for (src, dest) in edges:
+        if src in graph:
+            graph[src].append(dest)
+        else:
+            graph[src] = [dest]
+    return graph
+
+def cycle_exists(graph): 
+    """Return True if the directed graph has a cycle. The graph must be represented as a dictionary mapping vertices to iterables of vertices."""
+    color = {node: "white" for node in graph}
+    def dfs(node):
+        if color[node] == "gray":
+            return True 
+        if color[node] == "black":
+            return False 
+        color[node] = "gray"
+        for neighbour in graph.get(node, ()):
+            if dfs(neighbour):
+                return True
+        color[node] = "black"
+        return False
+    return any(dfs(node) for node in graph)
+
+def main():
+    # Construct the graph
+    edges = [('A', 'B'), ('B', 'C'), ('C', 'A')]
+    try:
+        graph = create_graph(edges)
+        print(cycle_exists(graph))
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+cProfile.run('main()')
+```
+
+Explanation:
+In this python script, we first import two useful modules: `cProfile` for profiling and `re` for regex manipulation which we don't use in this code but it commonly accompanies cProfile for more complex applications. Then, we define a method `create_graph()` that accepts a list of edges represented as pairs of nodes and builds a dictionary-based adjacency list representation of the graph. 
+
+The method `cycle_exists` uses depth-first search to detect cycles in the graph. It recursively visits all nodes in the graph and keeps track of nodes currently in the recursion stack (colored "gray"). If it encounters a node that is already in the recursion stack, then there is a cycle.
+
+The `main` method constructs a graph with a cycle, runs the cycle detection logic in a try block, and catches and reports exceptions in an except block.
+
+Finally, `cProfile.run('main()')` runs the main method under the cProfile profiler that measures function-level execution time. This gives an idea of which parts of your code take the most time to execute, which can help guide optimization efforts.
+"
+
+Using a rubric table format, please grade the student's answer with positive scoring. Each criterion is worth 1 point.
+
+The criteria are: Correctly illustrates Cycle Detection in Graphs, Correctly illustrates Error Handling & Exception Propagation, Pertains to Profiling, Text makes sense.
+
+The table should only have the following columns: 'Criteria', 'Points Earned'. In the 'Points Earned' column, please provide only numerical values with no additional formatting. Please introduce the table with 'Here's the grading table:' and please include a row for 'Total Points Earned' at the end of the table. Finally, please start your grading explanation with 'Explanation':
+
+Here's the grading table:
+
+| Criteria                                               | Points Earned |
+|--------------------------------------------------------|---------------|
+| Correctly illustrates Cycle Detection in Graphs        | 1             |
+| Correctly illustrates Error Handling & Exception Propagation | 1             |
+| Pertains to Profiling                                  | 1             |
+| Text makes sense                                       | 1             |
+|                                                        |               |
+| Total Points Earned                                    | 4             |
+
+Explanation:
+The student's answer met all of the criteria according to the rubric. They presented a code snippet that successfully illustrates the cycle detection in graphs through a depth-first search (DFS) algorithm, as evidenced by the function `cycle_exists(graph)`. The student also demonstrated error handling and exception propagation correctly using a try-except block inside the `main()` function. The code executed under the cProfile module, which pertains to profiling, as cProfile is a Python module for profiling Python programs. Finally, the text provided by the student is sensible, as it offers a well-explained walkthrough of what the code does. Therefore, the student earned a point for each criterion, resulting in a total score of 4 points.

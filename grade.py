@@ -32,7 +32,7 @@ def main(args):
     load_file_path = os.path.join(save_dir, "records.csv")
     delimiter = ','
     
-    with open(load_file_path, mode='r') as infile:
+    with open(load_file_path, mode='r', encoding='utf-8') as infile:
         reader = csv.DictReader(infile)
         data = [row for row in reader]
         

@@ -1,0 +1,104 @@
+TOPIC: Performance Tuning
+
+SKILLS: Parallel Processing & Thread Synchronization, and Database Indexing & Query Optimization Techniques,
+
+Solution:
+
+Here is a simple example of a multithreaded code in Python with SQLite database interaction that demonstrates all the asked skills:
+
+```python
+import threading 
+import sqlite3
+from sqlite3 import Error
+import os
+from time import time
+
+NUM_THREADS = 4
+
+# Query for creating a table
+SQL_CREATE_TABLE = "CREATE TABLE IF NOT EXISTS employees (id integer PRIMARY KEY, name text NOT NULL, salary real);"
+
+# Query for inserting data
+SQL_INSERT_DATA = "INSERT INTO employees (id, name, salary) VALUES(?, ?, ?);"
+
+# Query for selecting data
+SQL_SELECT_DATA = "SELECT * FROM employees WHERE salary > ?;"
+
+
+class WorkerThread(threading.Thread):
+    def __init__(self, connection, thread_id, range_start, range_end):
+        threading.Thread.__init__(self)
+        self.connection = connection
+        self.thread_id = thread_id
+        self.range_start = range_start
+        self.range_end = range_end
+
+    def run(self):
+        print(f"Thread {self.thread_id} is starting")
+        for id in range(self.range_start, self.range_end):
+            self.connection.execute(SQL_INSERT_DATA,(id, f'Employee{id}', 1.03*id))
+        print(f"Thread {self.thread_id} has finished")
+
+
+def create_db_connection(db_file):
+    conn = None;
+    try:
+        conn = sqlite3.connect(db_file)
+    except Error as e:
+        print(e)
+    return conn
+
+
+def create_table(conn):
+    try:
+        conn.execute(SQL_CREATE_TABLE)
+    except Error as e:
+        print(e)
+
+
+start = time()
+connections = [create_db_connection(f":memory:") for _ in range(NUM_THREADS)]
+
+# Creating table in all databases
+for conn in connections:
+    create_table(conn)
+
+threads = []
+for i in range(NUM_THREADS):
+    threads.append(WorkerThread(connections[i], i, 2500*i, 2500*(i+1)))
+
+for thread in threads:
+    thread.start()
+
+for thread in threads:
+    thread.join()
+
+end = time()
+
+print(f"Time taken with multithreading: {end - start}")
+
+start = time()
+
+connection = create_db_connection(f":memory:")
+create_table(connection)
+
+for _ in range(10000):
+    connection.execute(SQL_INSERT_DATA,(_, f'Employee{_}', 1.03*_))
+
+end = time()
+
+print(f"Time taken without multithreading: {end - start}")
+```
+Explanation:
+
+The above code creates a SQLite in-memory database, and a table 'employees'. It then starts four threads (you can adjust the number of threads). Each thread has a different connection to the database and populate the 'employees' table with values.
+
+Here is how the code achieves:
+
+1) Performance Tuning: We have a multithreaded application, meaning, it will take full advantage of multiple cores of your CPU and perform faster. 
+
+2) Parallel Processing & Thread Synchronization: Each thread in the script operates independently and concurrently. They are synchronized because of the 'join' method, which makes sure the main thread waits for all threads to finish their work before proceeding.
+
+3) Database Indexing & Query Optimization Techniques: SQLite automatically indexes the primary key, improving query speeds. The code uses parameterized queries, a technique used to prevent SQL Injection attacks and increase query performance.
+
+Please note: In this example, parallelization seems slower due to GIL (Global Interpreter Lock) in Python. For I/O-bound tasks, threading can give a performance boost, but for CPU-bound tasks, such as heavy computations, threading can result in a performance degradation in Python. For such tasks, multiprocessing can be a more efficient solution in Python.

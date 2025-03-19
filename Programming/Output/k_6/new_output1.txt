@@ -1,0 +1,39 @@
+TOPIC: Time Complexity
+
+SKILLS: Bloom Filters & Probabilistic Data Structures, Concurrency Control using Locks, Semaphores, CAS, Memoization & Tabulation, Cache Optimization & Data Locality, Trees & Prefix Tree Optimization, and Divide and Conquer Strategy
+
+It might be challenging to create a concise code that would demonstrate all of these concepts together, especially due to the expansive nature of some topics. However, I can show you how to use some of the requested concepts in a simplified example while explaining their roles in contributing to optimizing time complexity. 
+
+For memoization and tabulation, let's use the classic Fibonacci sequence problem, and solve it using dynamic programming.
+
+```python
+# Solution:
+
+def fibonacci(n, memo): 
+    if memo[n] is not None: 
+        return memo[n]
+    if n == 1 or n == 2:
+        result = 1
+    else:
+        result = fibonacci(n-1, memo) + fibonacci(n-2, memo)
+    memo[n] = result
+    return result
+
+def fibonacci_memo(n): 
+    memo = [None] * (n + 1)
+    return fibonacci(n, memo)
+```
+
+Explanation: 
+
+In this code, the Fibonacci numbers are calculated using memoization to prevent recalculation of already solved subproblems, thus reducing the time complexity to O(n). 
+
+An empty list 'memo' of size 'n' is created. This list is used to store the n-th Fibonacci numbers as they are being calculated. In the 'fibonacci' function, the code first checks if the n-th number is in 'memo'. If it is, the function simply returns that value, if it is not, the function proceeds to calculate it.  
+
+Also, we use the 'divide and conquer' strategy by dividing the problem into smaller sub-problems (fib(n-1) and fib(n-2)) and then combining the solutions of the sub-problems to solve the main problem.
+
+As for trees and prefix tree(Trie) optimization, you often use Tries in tasks needing string manipulations or to provide quick suggestions for auto-completing a search term.
+
+The discussed topics like concurrency control(pthread, locks, semaphores, etc.), cache optimization, and probabilistic data structure like bloom filters, although crucial in system-level programming and big data, are complex standalone topics that may not couple directly with the other topics you have mentioned in a small block of code.
+
+Learning all these concepts and applying them appropriately as per the requirement is what makes one a good programmer. The best way to master these topics is by implementing them individually in multiple problems.

@@ -1,0 +1,95 @@
+TOPIC: Dynamic Programming
+
+SKILLS: Memoization & Tabulation, Trees & Prefix Tree Optimization, Concurrency Control using Locks, Semaphores, CAS, Database Indexing & Query Optimization Techniques, and Tree Transformations & Rotations
+
+It's challenging to incorporate all of these concepts into one concise example, as they often apply to different problem domains or contexts. However, we can discuss distinct examples for each concept. Note that it might not be entirely appropriate or efficient to combine all these techniques in a single problem.
+
+Here are disjoint code snippet examples, each illustrating an aspect of your request:
+
+A. Memoization & Tabulation (Dynamic Programming): in Python, computing Fibonacci numbers.
+
+```python
+Solution:
+
+def fib(n, memo = {}):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    elif n not in memo:
+        memo[n] = fib(n - 1, memo) + fib(n - 2, memo)
+    return memo[n]
+
+print(fib(10))
+```
+Explanation:
+Memoization is demonstrated here by storing the values of computed Fibonacci numbers in a dictionary (memo) to avoid redundant computations. This dynamic programming technique significantly speeds up programs with overlapping sub-problems.
+
+B. Prefix Trees: Here's a basic implementation of a prefix tree (also known as a Trie).
+
+```python
+class TrieNode:
+    def __init__(self):
+        self.word = False
+        self.children = {}
+    
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+    def insert(self, word: str) -> None:
+        node = self.root
+        for char in word:
+            if char not in node.children:
+               node.children[char] = TrieNode()
+            node = node.children[char]
+        node.word = True
+```
+Explanation:
+Tries are useful in situations where we need to quickly check if a string is part of a collection of strings. We begin at the root and follow the links corresponding to the characters in the input string. If we reach a node's end that is marked as a word, we know that our input string is a word in the collection.
+
+C. Python example showing Concurrency Control using Locks:
+
+```python
+import threading
+lock = threading.Lock()
+
+lst = []
+def add_one():
+    global lst
+    for i in range(10):
+        with lock:
+            lst.append(1)
+
+threads = [threading.Thread(target=add_one) for _ in range(3)]
+for t in threads:
+    t.start()
+for t in threads:
+    t.join()
+
+print(sum(lst))  # prints: 30
+```
+Explanation:
+We launch three threads, and each thread is trying to mutate a list (`lst`) at the same time. To ensure that our program behaves correctly even with concurrent modification, we use a lock (`threading.Lock()`) to prevent that only one thread at a time can execute the critical section of the code.
+
+D. Database Indexing & Query Optimization Techniques. It depends heavily on a specific DBMS being used, thus this is more of a conceptual Example:
+
+Solution: 
+
+You have a SQL database and a table `users` with fields `id`, `name`, and `age`. To optimize search by `name`, you'd like to create an index on this field:
+
+``` sql
+CREATE INDEX index_name ON users (name);
+```
+
+Then if you run a query like:
+
+```sql
+SELECT * FROM users WHERE name = 'John';
+```
+
+The DBMS will use the `index_name` index to speed up this query.
+
+Explanation:
+The `CREATE INDEX` statement adds an index on the `name` field in the `users` database table. An index in a database functions much like an index in a book - it allows the database to find data swiftly without scanning every single row every time a database table is accessed.
+
+Note: These are quite high level and distinct concepts, each requiring its own time and code length to fully understand and apply. Also, CAS (Compare-and-swap), Semaphores, and Tree Transformations & Rotations are topics worth their separate code samples and are also language-dependent.

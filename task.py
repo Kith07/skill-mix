@@ -120,11 +120,21 @@ class MixSkillTextGeneration():
             file_name = os.path.join(save_dir, "conv", f"k_{len(skills)}-topic_{topic_str}-skills_{skills_str}")
 
             json_object = json.dumps(result_dict, indent=4)
-            with open(f"{file_name}.json", "w") as outfile:
+            max_length = 150
+            truncated_file_name = file_name[:max_length]
+            file_path = f"{truncated_file_name}.json"
+            #file_path = f"{file_name}.json"
+            dir_path = os.path.dirname(file_path)
+
+
+            if dir_path and not os.path.exists(dir_path):
+                os.makedirs(dir_path, exist_ok=True)
+
+            with open(file_path, "w") as outfile:
                 outfile.write(json_object)
                 
             all_msgs = '\n'.join(all_msgs)
-            with open(f"{file_name}.txt", 'w') as text_file:
+            with open(f"{truncated_file_name}.txt", 'w') as text_file:
                 text_file.write(all_msgs)
 
             df = pd.DataFrame(df)

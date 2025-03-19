@@ -16,7 +16,7 @@ path_to_models_dict = {
 
 def get_skills_dict(path='skills.csv'):
     skills_dict = {}
-    with open(path, newline='') as csvfile:
+    with open(path, newline='', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             if row['status'] not in ['remove', 'in review', 'maybe']:
@@ -28,12 +28,12 @@ def load_csv(path, dict_format=True):
     if os.path.exists(path) == False:
         return []
     if dict_format:
-        with open(path, newline='') as csvfile:
+        with open(path, newline='', encoding='utf-8') as csvfile:
             reader = csv.DictReader(csvfile)
             data = [row for row in reader]
         return data
     else:
-        with open(path, newline='') as csvfile:
+        with open(path, newline='', encoding='utf-8') as csvfile:
             reader = csv.reader(csvfile)
             data = [row for row in reader]
         return data

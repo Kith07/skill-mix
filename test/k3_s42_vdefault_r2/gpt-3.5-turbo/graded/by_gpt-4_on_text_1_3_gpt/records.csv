@@ -1,0 +1,182 @@
+k,skills,topic,system prompt,user_0,assistant_0,model_input_0,score_0,score_extracted_0,points_0,num_sentences_manual_in_student_answer_0,true_sentence_lim_pt_0,num_sentences_extracted_eq_num_sentences_model_0
+3,"statistical syllogism,  
+red herring,  
+complex question (loaded question with implicit assumption )",Gardening,You are a helpful assistant.,"Greetings! I was wondering if you could help me grade the following answer given by a student.
+
+Iâ€™ll first describe the question that was given to the student, and then give you the studentâ€™s answer, and the grading rubric.
+
+The question given to the student was as follows: ""Give a single piece of text with up to two sentences in the context of Gardening. This single piece of text should illustrate all of the following skills: statistical syllogism, red herring, complex question (loaded question with implicit assumption ).""
+
+The student's answer was: """"Many gardeners believe watering in the morning is best for plant health, but in reality, this practice can lead to overwatering. How do you ensure proper hydration for your plants without risking root rot?""""
+
+For reference, here are the definitions for the skills:
+**statistical syllogism**: A syllogism that argues, using inductive reasoning, from a generalization true for the most part to a particular case. For example, ""Almost all people are taller than 26 inches. Gareth is a person. Therefore, Gareth is taller than 26 inches.""
+**red herring**: Introducing irrelevant points to detract attention from a question. For example, A member of the press asks the president why they voted to expand a welfare program. The president responds, ""The strength of America is the strength of its communities, and I am proud to make our communities better places.""
+**complex question (loaded question with implicit assumption )**: A question that is loaded with an implicit assumption. For example, ""Why are you lying to me?"" is a question that presupposes you are lying to me. Any answer you give will force you to agree you are lying.
+
+Using a rubric table format, please grade the student's answer with positive scoring. Each criterion is worth 1 point. The criteria are: Correctly illustrates statistical syllogism, Correctly illustrates red herring, Correctly illustrates complex question (loaded question with implicit assumption ), Pertains to Gardening, Text makes sense, At most two sentences. The table should only have the following columns: 'Criteria', 'Points Earned'. In the 'Points Earned' column, please provide only numerical values with no additional formatting. Please introduce the table with 'Here's the grading table:' and please include a row for 'Total Points Earned' at the end of the table. Finally, please start your grading explanation with 'Explanation':","Here's the grading table:
+
+| Criteria                                          | Points Earned |
+|---------------------------------------------------|---------------|
+| Correctly illustrates statistical syllogism       | 0             |
+| Correctly illustrates red herring                 | 1             |
+| Correctly illustrates complex question            | 1             |
+| Pertains to Gardening                             | 1             |
+| Text makes sense                                  | 1             |
+| At most two sentences                             | 1             |
+| Total Points Earned                               | 5             |
+
+Explanation:
+
+The student's answer does not illustrate a statistical syllogism. The response introduces an irrelevant point which could divert attention away from the main issue, hence correctly illustrating the red herring (the practice of watering plants in the morning). The complex question is correctly illustrated with a loaded assumption (you risk root rot with your current methods), which would force the respondent to acknowledge the supposed risk. The context of the answer pertains to gardening, and the text makes sense. It has also correctly met the criteria of offering at most two sentences, which makes it succinct. Therefore, the student has earned 5 points out of the possible 6.","[{'role': 'system', 'content': 'You are a helpful assistant.'}, {'role': 'user', 'content': 'Greetings! I was wondering if you could help me grade the following answer given by a student.\n\nIâ€™ll first describe the question that was given to the student, and then give you the studentâ€™s answer, and the grading rubric.\n\nThe question given to the student was as follows: ""Give a single piece of text with up to two sentences in the context of Gardening. This single piece of text should illustrate all of the following skills: statistical syllogism, red herring, complex question (loaded question with implicit assumption ).""\n\nThe student\'s answer was: """"Many gardeners believe watering in the morning is best for plant health, but in reality, this practice can lead to overwatering. How do you ensure proper hydration for your plants without risking root rot?""""\n\nFor reference, here are the definitions for the skills:\n**statistical syllogism**: A syllogism that argues, using inductive reasoning, from a generalization true for the most part to a particular case. For example, ""Almost all people are taller than 26 inches. Gareth is a person. Therefore, Gareth is taller than 26 inches.""\n**red herring**: Introducing irrelevant points to detract attention from a question. For example, A member of the press asks the president why they voted to expand a welfare program. The president responds, ""The strength of America is the strength of its communities, and I am proud to make our communities better places.""\n**complex question (loaded question with implicit assumption )**: A question that is loaded with an implicit assumption. For example, ""Why are you lying to me?"" is a question that presupposes you are lying to me. Any answer you give will force you to agree you are lying.\n\nUsing a rubric table format, please grade the student\'s answer with positive scoring. Each criterion is worth 1 point. The criteria are: Correctly illustrates statistical syllogism, Correctly illustrates red herring, Correctly illustrates complex question (loaded question with implicit assumption ), Pertains to Gardening, Text makes sense, At most two sentences. The table should only have the following columns: \'Criteria\', \'Points Earned\'. In the \'Points Earned\' column, please provide only numerical values with no additional formatting. Please introduce the table with \'Here\'s the grading table:\' and please include a row for \'Total Points Earned\' at the end of the table. Finally, please start your grading explanation with \'Explanation\':'}]",5.0,5.0,"0.0,1.0,1.0,1.0,1.0,1.0",2,1.0,True
+3,"modus ponens,  
+emotional self regulation,  
+complex question (loaded question with implicit assumption )",Survivalism,You are a helpful assistant.,"Greetings! I was wondering if you could help me grade the following answer given by a student.
+
+Iâ€™ll first describe the question that was given to the student, and then give you the studentâ€™s answer, and the grading rubric.
+
+The question given to the student was as follows: ""Give a single piece of text with up to two sentences in the context of Survivalism. This single piece of text should illustrate all of the following skills: modus ponens, emotional self regulation, complex question (loaded question with implicit assumption ).""
+
+The student's answer was: ""Facing a wolf in the wilderness, remember: stand tall to appear larger and show confidence; if afraid, pause, breathe, and assess your emotions. Why are you hesitant to trust your survival instincts when encountering potential threats?""
+
+For reference, here are the definitions for the skills:
+**modus ponens**: A syllogism that is of the form “If P then Q. P. Hence Q.” For example, ""If today is Tuesday, then John will go to work. Today is Tuesday. Therefore, John will go to work.""
+**emotional self regulation**: a complex process that involves initiating, inhibiting, or modulating one's state or behavior in a given situation. For example, Examples of emotional self regulation include meditating, pausing to collect oneself before speaking, and practicing stress management.
+**complex question (loaded question with implicit assumption )**: A question that is loaded with an implicit assumption. For example, ""Why are you lying to me?"" is a question that presupposes you are lying to me. Any answer you give will force you to agree you are lying.
+
+Using a rubric table format, please grade the student's answer with positive scoring. Each criterion is worth 1 point. The criteria are: Correctly illustrates modus ponens, Correctly illustrates emotional self regulation, Correctly illustrates complex question (loaded question with implicit assumption ), Pertains to Survivalism, Text makes sense, At most two sentences. The table should only have the following columns: 'Criteria', 'Points Earned'. In the 'Points Earned' column, please provide only numerical values with no additional formatting. Please introduce the table with 'Here's the grading table:' and please include a row for 'Total Points Earned' at the end of the table. Finally, please start your grading explanation with 'Explanation':","Here's the grading table:
+
+| Criteria                                                                     | Points Earned |
+|------------------------------------------------------------------------------|---------------|
+| Correctly illustrates modus ponens                                           | 0             |
+| Correctly illustrates emotional self regulation                              | 1             |
+| Correctly illustrates complex question (loaded question with implicit assumption ) | 1             |
+| Pertains to Survivalism                                                      | 1             |
+| Text makes sense                                                             | 1             |
+| At most two sentences                                                        | 1             |
+| Total Points Earned                                                          | 5             |
+
+Explanation: 
+
+The student's answer correctly illustrates emotional self-regulation when they mention ""if afraid, pause, breathe, and assess your emotions."" This indicates the ability to manage one's feelings in a stressful encounter. 
+
+The answer also features a complex question (loaded question with implicit assumption) that presupposes the reader hesitates to trust their survival instincts - ""Why are you hesitant to trust your survival instincts when encountering potential threats?"" 
+
+The text clearly pertains to the subject of Survivalism as it discusses a scenario of handling a wild animal in the wilderness to ensure survival.
+
+However, the student's submission fails to illustrate modus ponens. There is no 'if P then Q. P. Hence Q' logic in the statement, so they miss the point here. 
+
+The text is coherent and follows the stipulated requirement of being at most two sentences, hence it gets points for both ""Text makes sense"" and ""At most two sentences."" 
+
+From these assessments, the total points earned are 5.","[{'role': 'system', 'content': 'You are a helpful assistant.'}, {'role': 'user', 'content': 'Greetings! I was wondering if you could help me grade the following answer given by a student.\n\nIâ€™ll first describe the question that was given to the student, and then give you the studentâ€™s answer, and the grading rubric.\n\nThe question given to the student was as follows: ""Give a single piece of text with up to two sentences in the context of Survivalism. This single piece of text should illustrate all of the following skills: modus ponens, emotional self regulation, complex question (loaded question with implicit assumption ).""\n\nThe student\'s answer was: ""Facing a wolf in the wilderness, remember: stand tall to appear larger and show confidence; if afraid, pause, breathe, and assess your emotions. Why are you hesitant to trust your survival instincts when encountering potential threats?""\n\nFor reference, here are the definitions for the skills:\n**modus ponens**: A syllogism that is of the form “If P then Q. P. Hence Q.” For example, ""If today is Tuesday, then John will go to work. Today is Tuesday. Therefore, John will go to work.""\n**emotional self regulation**: a complex process that involves initiating, inhibiting, or modulating one\'s state or behavior in a given situation. For example, Examples of emotional self regulation include meditating, pausing to collect oneself before speaking, and practicing stress management.\n**complex question (loaded question with implicit assumption )**: A question that is loaded with an implicit assumption. For example, ""Why are you lying to me?"" is a question that presupposes you are lying to me. Any answer you give will force you to agree you are lying.\n\nUsing a rubric table format, please grade the student\'s answer with positive scoring. Each criterion is worth 1 point. The criteria are: Correctly illustrates modus ponens, Correctly illustrates emotional self regulation, Correctly illustrates complex question (loaded question with implicit assumption ), Pertains to Survivalism, Text makes sense, At most two sentences. The table should only have the following columns: \'Criteria\', \'Points Earned\'. In the \'Points Earned\' column, please provide only numerical values with no additional formatting. Please introduce the table with \'Here\'s the grading table:\' and please include a row for \'Total Points Earned\' at the end of the table. Finally, please start your grading explanation with \'Explanation\':'}]",5.0,5.0,"0.0,1.0,1.0,1.0,1.0,1.0",2,1.0,True
+3,"self serving bias,  
+emotional self regulation,  
+statistical syllogism",Survivalism,You are a helpful assistant.,"Greetings! I was wondering if you could help me grade the following answer given by a student.
+
+Iâ€™ll first describe the question that was given to the student, and then give you the studentâ€™s answer, and the grading rubric.
+
+The question given to the student was as follows: ""Give a single piece of text with up to two sentences in the context of Survivalism. This single piece of text should illustrate all of the following skills: self serving bias, emotional self regulation, statistical syllogism.""
+
+The student's answer was: ""As a survivalist, I attribute my ability to adapt and succeed in the wilderness to my own resourcefulness and preparedness, maintaining a positive self-image even in challenging situations.""
+
+For reference, here are the definitions for the skills:
+**self serving bias**: A cognitive or perceptual process that is distorted by the need to maintain and enhance one’s self esteem. For example, ""If I do well on the exam, it’s because of my academic prowess and hard work. If I do poorly, it’s because the course was poorly taught, and the exam was poorly proctored.""
+**emotional self regulation**: a complex process that involves initiating, inhibiting, or modulating one's state or behavior in a given situation. For example, Examples of emotional self regulation include meditating, pausing to collect oneself before speaking, and practicing stress management.
+**statistical syllogism**: A syllogism that argues, using inductive reasoning, from a generalization true for the most part to a particular case. For example, ""Almost all people are taller than 26 inches. Gareth is a person. Therefore, Gareth is taller than 26 inches.""
+
+Using a rubric table format, please grade the student's answer with positive scoring. Each criterion is worth 1 point. The criteria are: Correctly illustrates self serving bias, Correctly illustrates emotional self regulation, Correctly illustrates statistical syllogism, Pertains to Survivalism, Text makes sense, At most two sentences. The table should only have the following columns: 'Criteria', 'Points Earned'. In the 'Points Earned' column, please provide only numerical values with no additional formatting. Please introduce the table with 'Here's the grading table:' and please include a row for 'Total Points Earned' at the end of the table. Finally, please start your grading explanation with 'Explanation':","Here's the grading table:
+
+| Criteria                                       | Points Earned |
+|------------------------------------------------|---------------|
+| Correctly illustrates self serving bias        | 1             |
+| Correctly illustrates emotional self regulation| 0             |
+| Correctly illustrates statistical syllogism    | 0             |
+| Pertains to Survivalism                        | 1             |
+| Text makes sense                               | 1             |
+| At most two sentences                          | 1             |
+| Total Points Earned                            | 4             |
+
+Explanation:
+
+The student successfully illustrated the self-serving bias when attributing successful survival outcomes to their own capabilities, which satisfies the need to maintain self-esteem. This outcome meets the criterion for self-serving bias.
+
+However, the student did not provide any illustration of emotional self-regulation or statistical syllogism. Emotional self-regulation would involve the student explaining how they manage their emotions in stressful or challenging circumstances. The statistical syllogism would require a clear analogy using inductive reasoning from a general premise to a particular case.
+
+The text certainly pertains to Survivalism, as it makes mention of adapting and surviving in wilderness conditions.
+
+The text does make sense because it is clearly worded and the content logically follows the cue of the question.
+
+Lastly, the student’s answer fits within the required length of two sentences or less.
+","[{'role': 'system', 'content': 'You are a helpful assistant.'}, {'role': 'user', 'content': 'Greetings! I was wondering if you could help me grade the following answer given by a student.\n\nIâ€™ll first describe the question that was given to the student, and then give you the studentâ€™s answer, and the grading rubric.\n\nThe question given to the student was as follows: ""Give a single piece of text with up to two sentences in the context of Survivalism. This single piece of text should illustrate all of the following skills: self serving bias, emotional self regulation, statistical syllogism.""\n\nThe student\'s answer was: ""As a survivalist, I attribute my ability to adapt and succeed in the wilderness to my own resourcefulness and preparedness, maintaining a positive self-image even in challenging situations.""\n\nFor reference, here are the definitions for the skills:\n**self serving bias**: A cognitive or perceptual process that is distorted by the need to maintain and enhance one’s self esteem. For example, ""If I do well on the exam, it’s because of my academic prowess and hard work. If I do poorly, it’s because the course was poorly taught, and the exam was poorly proctored.""\n**emotional self regulation**: a complex process that involves initiating, inhibiting, or modulating one\'s state or behavior in a given situation. For example, Examples of emotional self regulation include meditating, pausing to collect oneself before speaking, and practicing stress management.\n**statistical syllogism**: A syllogism that argues, using inductive reasoning, from a generalization true for the most part to a particular case. For example, ""Almost all people are taller than 26 inches. Gareth is a person. Therefore, Gareth is taller than 26 inches.""\n\nUsing a rubric table format, please grade the student\'s answer with positive scoring. Each criterion is worth 1 point. The criteria are: Correctly illustrates self serving bias, Correctly illustrates emotional self regulation, Correctly illustrates statistical syllogism, Pertains to Survivalism, Text makes sense, At most two sentences. The table should only have the following columns: \'Criteria\', \'Points Earned\'. In the \'Points Earned\' column, please provide only numerical values with no additional formatting. Please introduce the table with \'Here\'s the grading table:\' and please include a row for \'Total Points Earned\' at the end of the table. Finally, please start your grading explanation with \'Explanation\':'}]",4.0,4.0,"1.0,0.0,0.0,1.0,1.0,1.0",1,1.0,True
+3,"metaphor,  
+spatial reasoning,  
+complex question (loaded question with implicit assumption )",Beekeeping,You are a helpful assistant.,"Greetings! I was wondering if you could help me grade the following answer given by a student.
+
+Iâ€™ll first describe the question that was given to the student, and then give you the studentâ€™s answer, and the grading rubric.
+
+The question given to the student was as follows: ""Give a single piece of text with up to two sentences in the context of Beekeeping. This single piece of text should illustrate all of the following skills: metaphor, spatial reasoning, complex question (loaded question with implicit assumption ).""
+
+The student's answer was: ""Amidst the sun-kissed meadows, the diligent bees weave tales of their honey-gathering adventures, asking, ""How do we chart our path through a tapestry of petals to bring sweetness back to our hive?""""
+
+For reference, here are the definitions for the skills:
+**metaphor**: a figure of speech that, for rhetorical effect, directly refers to one thing by mentioning another. For example, ""All the world’s a stage, And all the men and women merely players"" is a metaphor because it’s a comparison without using ""like"" or ""as.""
+**spatial reasoning**: The capacity to reason about the spatial relationships between objects. For example, The key fit into the box. Using spatial reasoning, one can deduce that the width of the key was smaller than the width of the box.
+**complex question (loaded question with implicit assumption )**: A question that is loaded with an implicit assumption. For example, ""Why are you lying to me?"" is a question that presupposes you are lying to me. Any answer you give will force you to agree you are lying.
+
+Using a rubric table format, please grade the student's answer with positive scoring. Each criterion is worth 1 point. The criteria are: Correctly illustrates metaphor, Correctly illustrates spatial reasoning, Correctly illustrates complex question (loaded question with implicit assumption ), Pertains to Beekeeping, Text makes sense, At most two sentences. The table should only have the following columns: 'Criteria', 'Points Earned'. In the 'Points Earned' column, please provide only numerical values with no additional formatting. Please introduce the table with 'Here's the grading table:' and please include a row for 'Total Points Earned' at the end of the table. Finally, please start your grading explanation with 'Explanation':","Here's the grading table:
+
+| Criteria                                           | Points Earned |
+|----------------------------------------------------|---------------|
+| Correctly illustrates metaphor                    | 1             |
+| Correctly illustrates spatial reasoning            | 0             |
+| Correctly illustrates complex question (loaded question with implicit assumption) | 0 |
+| Pertains to Beekeeping                             | 1             |
+| Text makes sense                                   | 1             |
+| At most two sentences                              | 1             |
+| Total Points Earned                                | 4             |
+
+Explanation: 
+The student's answer correctly includes a beautiful metaphor describing bees weaving tales of their adventures. It certainly pertains to beekeeping and the text makes sense. It also adheres to the requirement of being at most two sentences. However, it does not illustrate spatial reasoning as it does not express any spatial relationships between objects. Similarly, the text does not contain a complex question (loaded question with implicit assumption). Therefore, total points earned is 4 out of 6.","[{'role': 'system', 'content': 'You are a helpful assistant.'}, {'role': 'user', 'content': 'Greetings! I was wondering if you could help me grade the following answer given by a student.\n\nIâ€™ll first describe the question that was given to the student, and then give you the studentâ€™s answer, and the grading rubric.\n\nThe question given to the student was as follows: ""Give a single piece of text with up to two sentences in the context of Beekeeping. This single piece of text should illustrate all of the following skills: metaphor, spatial reasoning, complex question (loaded question with implicit assumption ).""\n\nThe student\'s answer was: ""Amidst the sun-kissed meadows, the diligent bees weave tales of their honey-gathering adventures, asking, ""How do we chart our path through a tapestry of petals to bring sweetness back to our hive?""""\n\nFor reference, here are the definitions for the skills:\n**metaphor**: a figure of speech that, for rhetorical effect, directly refers to one thing by mentioning another. For example, ""All the world’s a stage, And all the men and women merely players"" is a metaphor because it’s a comparison without using ""like"" or ""as.""\n**spatial reasoning**: The capacity to reason about the spatial relationships between objects. For example, The key fit into the box. Using spatial reasoning, one can deduce that the width of the key was smaller than the width of the box.\n**complex question (loaded question with implicit assumption )**: A question that is loaded with an implicit assumption. For example, ""Why are you lying to me?"" is a question that presupposes you are lying to me. Any answer you give will force you to agree you are lying.\n\nUsing a rubric table format, please grade the student\'s answer with positive scoring. Each criterion is worth 1 point. The criteria are: Correctly illustrates metaphor, Correctly illustrates spatial reasoning, Correctly illustrates complex question (loaded question with implicit assumption ), Pertains to Beekeeping, Text makes sense, At most two sentences. The table should only have the following columns: \'Criteria\', \'Points Earned\'. In the \'Points Earned\' column, please provide only numerical values with no additional formatting. Please introduce the table with \'Here\'s the grading table:\' and please include a row for \'Total Points Earned\' at the end of the table. Finally, please start your grading explanation with \'Explanation\':'}]",4.0,4.0,"1.0,0.0,0.0,1.0,1.0,1.0",1,1.0,True
+3,"self serving bias,  
+red herring,  
+modus ponens",Triathlons,You are a helpful assistant.,"Greetings! I was wondering if you could help me grade the following answer given by a student.
+
+Iâ€™ll first describe the question that was given to the student, and then give you the studentâ€™s answer, and the grading rubric.
+
+The question given to the student was as follows: ""Give a single piece of text with up to two sentences in the context of Triathlons. This single piece of text should illustrate all of the following skills: self serving bias, red herring, modus ponens.""
+
+The student's answer was: ""**
+""Despite coming in last in the swimming segment, John attributed his performance to a recent illness rather than lack of preparation, showing a self-serving bias. When asked about his strategy for the upcoming running leg, he diverted the conversation by discussing the beautiful scenery along the route, introducing a red herring.""
+
+**""
+
+For reference, here are the definitions for the skills:
+**self serving bias**: A cognitive or perceptual process that is distorted by the need to maintain and enhance one’s self esteem. For example, ""If I do well on the exam, it’s because of my academic prowess and hard work. If I do poorly, it’s because the course was poorly taught, and the exam was poorly proctored.""
+**red herring**: Introducing irrelevant points to detract attention from a question. For example, A member of the press asks the president why they voted to expand a welfare program. The president responds, ""The strength of America is the strength of its communities, and I am proud to make our communities better places.""
+**modus ponens**: A syllogism that is of the form “If P then Q. P. Hence Q.” For example, ""If today is Tuesday, then John will go to work. Today is Tuesday. Therefore, John will go to work.""
+
+Using a rubric table format, please grade the student's answer with positive scoring. Each criterion is worth 1 point. The criteria are: Correctly illustrates self serving bias, Correctly illustrates red herring, Correctly illustrates modus ponens, Pertains to Triathlons, Text makes sense, At most two sentences. The table should only have the following columns: 'Criteria', 'Points Earned'. In the 'Points Earned' column, please provide only numerical values with no additional formatting. Please introduce the table with 'Here's the grading table:' and please include a row for 'Total Points Earned' at the end of the table. Finally, please start your grading explanation with 'Explanation':","Here's the grading table:
+
+| Criteria                               | Points Earned |
+|-------------------------------------|----------------|
+| Correctly illustrates self serving bias  | 1                 |
+| Correctly illustrates red herring       | 1                 |
+| Correctly illustrates modus ponens  | 0                 |
+| Pertains to Triathlons                    | 1                 |
+| Text makes sense                              | 1                 |
+| At most two sentences                     | 1                 |
+| **Total Points Earned**                   | **5**            |
+
+Explanation:
+
+The student correctly illustrated a self-serving bias, as shown when the character John blamed his poor swimming performance on an illness rather than lack of preparation. 
+
+A red herring was conveniently introduced when John changed the subject from his strategy for the upcoming running segment to the scenery of the route.
+
+However, the student failed to incorporate modus ponens, the logical argument form, into their response.
+
+The context of triathlons was clearly maintained in the given text.
+
+The text provided by the student also makes sense as a standalone piece; while dense, the two statements are understandable and coherent.
+
+Finally, the criteria for being at most two sentences was met with exactly two sentences.","[{'role': 'system', 'content': 'You are a helpful assistant.'}, {'role': 'user', 'content': 'Greetings! I was wondering if you could help me grade the following answer given by a student.\n\nIâ€™ll first describe the question that was given to the student, and then give you the studentâ€™s answer, and the grading rubric.\n\nThe question given to the student was as follows: ""Give a single piece of text with up to two sentences in the context of Triathlons. This single piece of text should illustrate all of the following skills: self serving bias, red herring, modus ponens.""\n\nThe student\'s answer was: ""**\n""Despite coming in last in the swimming segment, John attributed his performance to a recent illness rather than lack of preparation, showing a self-serving bias. When asked about his strategy for the upcoming running leg, he diverted the conversation by discussing the beautiful scenery along the route, introducing a red herring.""\n\n**""\n\nFor reference, here are the definitions for the skills:\n**self serving bias**: A cognitive or perceptual process that is distorted by the need to maintain and enhance one’s self esteem. For example, ""If I do well on the exam, it’s because of my academic prowess and hard work. If I do poorly, it’s because the course was poorly taught, and the exam was poorly proctored.""\n**red herring**: Introducing irrelevant points to detract attention from a question. For example, A member of the press asks the president why they voted to expand a welfare program. The president responds, ""The strength of America is the strength of its communities, and I am proud to make our communities better places.""\n**modus ponens**: A syllogism that is of the form “If P then Q. P. Hence Q.” For example, ""If today is Tuesday, then John will go to work. Today is Tuesday. Therefore, John will go to work.""\n\nUsing a rubric table format, please grade the student\'s answer with positive scoring. Each criterion is worth 1 point. The criteria are: Correctly illustrates self serving bias, Correctly illustrates red herring, Correctly illustrates modus ponens, Pertains to Triathlons, Text makes sense, At most two sentences. The table should only have the following columns: \'Criteria\', \'Points Earned\'. In the \'Points Earned\' column, please provide only numerical values with no additional formatting. Please introduce the table with \'Here\'s the grading table:\' and please include a row for \'Total Points Earned\' at the end of the table. Finally, please start your grading explanation with \'Explanation\':'}]",5.0,5.0,"1.0,1.0,0.0,1.0,1.0,1.0",2,1.0,True
